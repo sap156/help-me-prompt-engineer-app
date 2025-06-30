@@ -186,29 +186,12 @@ Now, please complete the task following all the above guidelines.
 ## 🏗️ Project Structure
 
 ```
-five-principles-prompt-engineering/
-├── streamlit_app.py              # Main Streamlit web application
-├── prompt_engineering_app.py     # Command line version
+help-me-prompt-engineer-app/
+├── prompt_app.py              # Main Streamlit web application
 ├── requirements.txt              # Python dependencies
-├── requirements-dev.txt          # Development dependencies
 ├── .env.example                  # Environment variables template
 ├── .gitignore                   # Git ignore rules
 ├── README.md                    # This file
-├── LICENSE                      # MIT license
-├── docs/                        # Documentation
-│   ├── API.md                   # API documentation
-│   ├── CONTRIBUTING.md          # Contribution guidelines
-│   └── EXAMPLES.md              # Usage examples
-├── tests/                       # Test files
-│   ├── test_prompt_app.py       # Unit tests
-│   └── test_streamlit_app.py    # Streamlit tests
-├── screenshots/                 # Interface screenshots
-├── examples/                    # Example prompts and outputs
-│   ├── sample_prompts.md        # Sample generated prompts
-│   └── use_cases.md            # Common use cases
-└── scripts/                     # Utility scripts
-    ├── setup.sh                 # Setup script
-    └── deploy.sh               # Deployment script
 ```
 
 ## 🧪 Testing
@@ -343,20 +326,6 @@ chmod +x scripts/setup.sh
 ./scripts/setup.sh
 ```
 
-## 📈 Roadmap
-
-- [ ] **Multi-language support** - Support for prompts in different languages
-- [ ] **More AI providers** - Integration with Claude, Gemini, etc.
-- [ ] **Prompt templates** - Pre-built templates for common use cases
-- [ ] **Team collaboration** - Shared workspaces and prompt libraries
-- [ ] **API endpoint** - REST API for programmatic access
-- [ ] **Mobile app** - React Native mobile version
-- [ ] **Prompt analytics** - Advanced metrics and A/B testing
-- [ ] **Enterprise features** - SSO, audit logs, advanced security
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -365,19 +334,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Streamlit** for the beautiful web interface framework
 - **The Prompt Engineering Community** for research and best practices
 
-## 📞 Support
-
-- **Documentation:** [docs/](docs/)
-- **Issues:** [GitHub Issues](https://github.com/yourusername/five-principles-prompt-engineering/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/five-principles-prompt-engineering/discussions)
-- **Email:** contact@yourproject.com
-
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/five-principles-prompt-engineering&type=Date)](https://star-history.com/#yourusername/five-principles-prompt-engineering&Date)
-
----
-
-**Made with ❤️ by [Your Name](https://github.com/yourusername)**
-
-*If you find this project helpful, please consider giving it a ⭐ star on GitHub!*
