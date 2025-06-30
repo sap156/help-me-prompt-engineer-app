@@ -45,14 +45,14 @@ This application is based on the proven **Five Principles of Prompting** methodo
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/five-principles-prompt-engineering.git
-cd five-principles-prompt-engineering
+git clone https://github.com/sap156/help-me-prompt-engineer-app.git
+cd help-me-prompt-engineer-app
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Run the web app
-streamlit run streamlit_app.py
+streamlit run prompt_app.py
 
 # Open http://localhost:8501 in your browser
 ```
@@ -64,10 +64,10 @@ streamlit run streamlit_app.py
 pip install -r requirements.txt
 
 # Run in demo mode (no API key required)
-python prompt_engineering_app.py --demo
+python prompt_app.py --demo
 
 # Run with OpenAI API
-python prompt_engineering_app.py --api-key your_openai_key_here
+python prompt_app.py --api-key your_openai_key_here
 ```
 
 ## 📦 Installation
@@ -80,8 +80,8 @@ python prompt_engineering_app.py --api-key your_openai_key_here
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/five-principles-prompt-engineering.git
-   cd five-principles-prompt-engineering
+   git clone https://github.com/sap156/help-me-prompt-engineer-app.git
+   cd help-me-prompt-engineer-app
    ```
 
 2. **Create a virtual environment:**
@@ -107,7 +107,7 @@ python prompt_engineering_app.py --api-key your_openai_key_here
 
 1. **Start the app:**
    ```bash
-   streamlit run streamlit_app.py
+   streamlit run prompt_app.py
    ```
 
 2. **Configure API** (or use Demo Mode):
@@ -129,16 +129,16 @@ python prompt_engineering_app.py --api-key your_openai_key_here
 
 ```bash
 # Interactive mode
-python prompt_engineering_app.py
+python prompt_app.py
 
 # With API key
-python prompt_engineering_app.py --api-key sk-your-key-here
+python prompt_app.py --api-key sk-your-key-here
 
 # Demo mode (no API required)
-python prompt_engineering_app.py --demo
+python prompt_app.py --demo
 
 # Help
-python prompt_engineering_app.py --help
+python prompt_app.py --help
 ```
 
 ## 📊 Example Output
