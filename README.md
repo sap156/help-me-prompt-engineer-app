@@ -49,8 +49,8 @@ This application is based on the proven **Five Principles of Prompting** methodo
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/five-principles-prompt-engineering.git
-   cd five-principles-prompt-engineering
+   git clone https://github.com/sap156/help-me-prompt-engineer-app.git
+   cd help-me-prompt-engineer-app
    ```
 
 2. **Create a virtual environment:**
@@ -64,18 +64,12 @@ This application is based on the proven **Five Principles of Prompting** methodo
    pip install -r requirements.txt
    ```
 
-4. **Set up environment variables (optional):**
-   ```bash
-   cp .env.example .env
-   # Edit .env and add your OpenAI API key
-   ```
-
-5. **Run the application:**
+4. **Run the application:**
    ```bash
    streamlit run prompt_app.py
    ```
 
-6. **Open your browser:**
+5. **Open your browser:**
    - Navigate to `http://localhost:8501`
    - Start generating optimized prompts!
 
