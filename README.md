@@ -1,6 +1,6 @@
 # 🚀 Five Principles Prompt Engineering App
 
-A comprehensive Python application that implements the **Five Principles of Prompting** to generate well-structured, optimized prompts for AI models. Available in both **Command Line** and **Beautiful Streamlit Web Interface** versions.
+A comprehensive Python web application that implements the **Five Principles of Prompting** to generate well-structured, optimized prompts for AI models. Built with **Streamlit** and **LangChain** for a beautiful, professional user experience.
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -19,69 +19,38 @@ This application is based on the proven **Five Principles of Prompting** methodo
 
 ## ✨ Features
 
-### 🌐 Streamlit Web App
-- **Beautiful Interface** - Modern, responsive web design
-- **Interactive Forms** - User-friendly input collection
+### 🌐 Streamlit Web Interface
+- **Beautiful UI** - Modern, responsive web design with custom styling
+- **Interactive Forms** - Guided input collection with help text and validation
 - **Real-time Analytics** - Visual charts showing prompt quality metrics
-- **Multiple Views** - Tabbed interface for results, breakdowns, and analysis
+- **Multiple Views** - Tabbed interface for results, principle breakdown, and analysis
 - **Copy & Download** - Easy export of generated prompts
-- **Demo Mode** - Works without API keys for testing
-
-### 💻 Command Line Version
-- **Rich Console Interface** - Beautiful terminal experience with colors and progress bars
-- **Guided Input** - Step-by-step prompts for all necessary information
-- **File Export** - Save prompts to text files
-- **Comprehensive Logging** - Detailed breakdown of each principle application
+- **Demo Mode** - Full functionality without requiring API keys
 
 ### 🤖 AI Integration
-- **LangChain Framework** - Professional AI orchestration
-- **OpenAI GPT Integration** - Powered by GPT-3.5-turbo
-- **Smart Fallbacks** - Works in demo mode without API keys
-- **Error Handling** - Graceful degradation when APIs are unavailable
+- **LangChain Framework** - Professional AI orchestration and chain management
+- **OpenAI GPT Integration** - Powered by GPT-3.5-turbo for intelligent prompt generation
+- **Smart Fallbacks** - Graceful degradation with demo mode when APIs are unavailable
+- **Error Handling** - Robust error handling with user-friendly messages
+
+### 📊 Analytics & Visualization
+- **Confidence Scoring** - AI-generated confidence scores for prompt quality
+- **Radar Charts** - Visual representation of principle implementation completeness
+- **Word Count Analysis** - Bar charts showing content distribution across components
+- **Progress Tracking** - Real-time feedback during prompt generation
 
 ## 🚀 Quick Start
-
-### Option 1: Streamlit Web App (Recommended)
-
-```bash
-# Clone the repository
-git clone https://github.com/sap156/help-me-prompt-engineer-app.git
-cd help-me-prompt-engineer-app
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the web app
-streamlit run prompt_app.py
-
-# Open http://localhost:8501 in your browser
-```
-
-### Option 2: Command Line App
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run in demo mode (no API key required)
-python prompt_app.py --demo
-
-# Run with OpenAI API
-python prompt_app.py --api-key your_openai_key_here
-```
-
-## 📦 Installation
 
 ### Prerequisites
 - Python 3.8 or higher
 - OpenAI API key (optional - demo mode available)
 
-### Setup
+### Installation & Setup
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/sap156/help-me-prompt-engineer-app.git
-   cd help-me-prompt-engineer-app
+   git clone https://github.com/yourusername/five-principles-prompt-engineering.git
+   cd five-principles-prompt-engineering
    ```
 
 2. **Create a virtual environment:**
@@ -101,236 +70,79 @@ python prompt_app.py --api-key your_openai_key_here
    # Edit .env and add your OpenAI API key
    ```
 
-## 🔧 Usage
-
-### Streamlit Web Interface
-
-1. **Start the app:**
+5. **Run the application:**
    ```bash
    streamlit run prompt_app.py
    ```
 
-2. **Configure API** (or use Demo Mode):
+6. **Open your browser:**
+   - Navigate to `http://localhost:8501`
+   - Start generating optimized prompts!
+
+## 🔧 Usage
+
+### Web Interface
+
+1. **Configure API Settings:**
    - Enter your OpenAI API key in the sidebar
-   - Or toggle "Demo Mode" for testing without API
+   - Or enable "Demo Mode" for testing without API
 
-3. **Fill out the form:**
-   - Describe your task
-   - Specify audience, tone, format
-   - Add any constraints
-   - Set complexity level
+2. **Describe Your Task:**
+   - Enter what you want the AI to perform
+   - Specify target audience and desired tone
+   - Add any additional context
 
-4. **Generate and analyze:**
+3. **Set Parameters:**
+   - Choose output format (Text, JSON, Email, etc.)
+   - Select task complexity level
+   - Add specific constraints
+
+4. **Generate Prompt:**
    - Click "Generate Optimized Prompt"
+   - Watch the progress as each principle is applied
    - View results in multiple tabs
-   - Copy or download your prompt
 
-### Command Line Interface
+5. **Export Results:**
+   - Copy prompt to clipboard
+   - Download as text file
+   - Analyze quality metrics
 
-```bash
-# Interactive mode
-python prompt_app.py
-
-# With API key
-python prompt_app.py --api-key sk-your-key-here
-
-# Demo mode (no API required)
-python prompt_app.py --demo
-
-# Help
-python prompt_app.py --help
-```
-
-## 📊 Example Output
-
-The app transforms a simple request like:
+## 📊 Example Transformation
 
 **Input:** "Write a blog post about sustainable gardening"
 
-**Into a comprehensive prompt:**
-
+**Generated Optimized Prompt:**
 ```
-You are an expert assistant helping beginner gardeners. Your task is to write a blog post about sustainable gardening. Use a friendly and encouraging tone throughout your response. Context: Focus on urban environments with limited space.
+You are an expert assistant helping beginner gardeners. Your task is to write a blog post about sustainable gardening. Use a friendly and encouraging tone throughout your response.
 
-Format your response as text. Keep it under 800 words and include 3 actionable tips.
+Format your response as Plain Text. Keep it under 800 words and include 3 actionable tips.
 
 Examples of good output:
 - Example 1: [Sample blog post opening with encouraging tone]
 - Example 2: [Example showing sustainable gardening tip format]  
 - Example 3: [Example demonstrating urban gardening focus]
 
-Quality criteria: Ensure your response directly addresses sustainable gardening, is appropriate for beginners, follows the text format exactly, maintains friendly tone.
+Quality criteria:
+Ensure your response: 1) Directly addresses sustainable gardening, 2) Is appropriate for beginner gardeners, 3) Follows the Plain Text format exactly, 4) Maintains friendly and encouraging tone
 
-Please approach this systematically:
-1. Research sustainable gardening basics for beginners
-2. Focus on urban environment solutions
-3. Structure content with exactly 3 actionable tips
-4. Review for friendly and encouraging tone
+Approach this task step by step:
+1. Analyze the write a blog post about sustainable gardening requirements
+2. Research relevant information for beginner gardeners
+3. Structure content in Plain Text format
+4. Review and refine for friendly and encouraging tone
 
 Now, please complete the task following all the above guidelines.
 ```
 
-## 🎨 Screenshots
-
-### Web Interface
-![Streamlit Interface](screenshots/streamlit-main.png)
-*Main input form with guided prompts*
-
-![Results View](screenshots/streamlit-results.png)
-*Tabbed results with analytics and breakdown*
-
-### Command Line Interface
-![CLI Interface](screenshots/cli-interface.png)
-*Rich console interface with progress tracking*
-
 ## 🏗️ Project Structure
 
 ```
-help-me-prompt-engineer-app/
-├── prompt_app.py              # Main Streamlit web application
+five-principles-prompt-engineering/
+├── prompt_app.py                 # Main Streamlit application
 ├── requirements.txt              # Python dependencies
 ├── .env.example                  # Environment variables template
 ├── .gitignore                   # Git ignore rules
 ├── README.md                    # This file
+└── LICENSE                      # MIT license
 ```
-
-## 🧪 Testing
-
-Run the test suite:
-
-```bash
-# Install test dependencies
-pip install -r requirements-dev.txt
-
-# Run all tests
-pytest
-
-# Run with coverage
-pytest --cov=.
-
-# Run specific tests
-pytest tests/test_prompt_app.py
-```
-
-## 🔐 Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-# OpenAI Configuration
-OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_MODEL=gpt-3.5-turbo
-OPENAI_TEMPERATURE=0.3
-OPENAI_MAX_TOKENS=2000
-
-# Streamlit Configuration
-STREAMLIT_THEME_BASE=light
-STREAMLIT_THEME_PRIMARY_COLOR=#1f77b4
-
-# Application Settings
-DEFAULT_COMPLEXITY=moderate
-DEFAULT_FORMAT=text
-ENABLE_ANALYTICS=true
-```
-
-## 🚀 Deployment
-
-### Deploy to Streamlit Cloud
-
-1. **Push to GitHub**
-2. **Connect to Streamlit Cloud**
-3. **Add secrets** in Streamlit Cloud dashboard:
-   ```
-   OPENAI_API_KEY = "your_api_key_here"
-   ```
-4. **Deploy automatically**
-
-### Deploy to Heroku
-
-```bash
-# Install Heroku CLI and login
-heroku login
-
-# Create Heroku app
-heroku create your-app-name
-
-# Set environment variables
-heroku config:set OPENAI_API_KEY=your_api_key_here
-
-# Deploy
-git push heroku main
-```
-
-### Deploy with Docker
-
-```bash
-# Build image
-docker build -t prompt-engineering-app .
-
-# Run container
-docker run -p 8501:8501 -e OPENAI_API_KEY=your_key prompt-engineering-app
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](docs/CONTRIBUTING.md) for details.
-
-### Development Setup
-
-1. **Fork the repository**
-2. **Create a feature branch:**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Install development dependencies:**
-   ```bash
-   pip install -r requirements-dev.txt
-   ```
-4. **Make your changes**
-5. **Run tests:**
-   ```bash
-   pytest
-   ```
-6. **Submit a pull request**
-
-## 📚 Documentation
-
-- [API Documentation](docs/API.md)
-- [Contributing Guidelines](docs/CONTRIBUTING.md)
-- [Usage Examples](docs/EXAMPLES.md)
-- [Five Principles Guide](docs/PRINCIPLES.md)
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**"Module not found" error:**
-```bash
-pip install -r requirements.txt
-```
-
-**OpenAI API errors:**
-- Check your API key is valid
-- Ensure you have credits available
-- Try demo mode: `--demo` flag
-
-**Streamlit won't start:**
-```bash
-streamlit --version
-streamlit run streamlit_app.py --server.port 8501
-```
-
-**Permission errors:**
-```bash
-chmod +x scripts/setup.sh
-./scripts/setup.sh
-```
-
-
-## 🙏 Acknowledgments
-
-- **OpenAI** for providing the GPT models
-- **LangChain** for the excellent framework
-- **Streamlit** for the beautiful web interface framework
-- **The Prompt Engineering Community** for research and best practices
 
